@@ -27,18 +27,40 @@
 # else:
 #     print(my_list[-1] + my_list[-2])
 ############################## 4)
-value = input('Введите число с запятой: ')
-try:
-    value = float(value)
-    new_value = value ** -1
-    print(new_value)
-except(ValueError):
-    print('Это не число')
-except(ZeroDivisionError):
-    print('На ноль делить нельзя')
-except:
-    print('Что-то не так')
+# value = input('Введите число с запятой: ')
+# try:
+#     value = float(value)
+#     new_value = value ** -1
+#     print(new_value)
+# except(ValueError):
+#     print('Это не число')
+# except(ZeroDivisionError):
+#     print('На ноль делить нельзя')
 ############################## 5)
+# my_indexes = [0, 1, 2, 3, 4]
+# my_list = 'qwert'
+# for index in my_indexes:
+# 	print(my_list[index])
+############################# 6)
+# my_indexes = [0, 1, 2, 3, 4]
+# my_list_1 = 'qwert'
+# my_list_2 = 'asdfg'
+# for index in my_indexes:
+#     print(my_list_1[index], my_list_2[index])
+############################# 7)
+my_string_1 = '0123456789'
+my_string_2 = my_string_1[:]
+new_list = []
+for symbol_1 in my_string_1:
+    for symbol_2 in my_string_2:
+        elem = symbol_1 + symbol_2
+        elem = int(elem)
+        new_list.append(elem)
+print(new_list)
+
+
+
+
 
 
 

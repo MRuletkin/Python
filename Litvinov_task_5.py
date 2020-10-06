@@ -78,17 +78,11 @@ print(sub_str)
 ##################### 10)
 my_list = [2, 4, 1, 5, 3, 9, 0, 7]
 my_result = []
-for symbol in my_list[1:-2]:
-    if my_list[my_list.index(symbol)] > my_list[my_list.index(4) + 1] + my_list[my_list.index(4) - 1]:
-        my_result.append(symbol)
+for index in range(len(my_list)):
+    if index > 0 and index < len(my_list) - 1 and my_list[index] > my_list[index + 1] + my_list[index - 1]:
+        my_result.append(index)
 print(len(my_result))
 
-
-
-# for index in range(len(my_list)):
-#     if index != 0 and index != (-1) and my_list[index] > (my_list[index - 1] + my_list[index + 1]):
-#         my_result.append(my_list[index])
-# print(len(my_result))
 
 
 

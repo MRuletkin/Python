@@ -48,7 +48,7 @@ residence = {'country': 'Ukraine',
              'street': 'Polya'}
 
 work = {'existence': False,
-        'position': 'Sdudent'}
+        'position': 'Student'}
 
 somebody = {'name': 'Michael',
             'age': 19,

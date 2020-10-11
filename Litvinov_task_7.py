@@ -27,7 +27,7 @@ from random import randint
 
 ################### 4)
 my_dict_1 = {f'key_{a}': a ** 2 for a in range(7)}
-my_dict_2 = {f'key_{b}': b ** 2 for b in range(2, 6)}
+my_dict_2 = {f'key_{b}': b ** 3 for b in range(2, 6)}
 # print(my_dict_1)
 # print(my_dict_2)
 #
@@ -48,9 +48,18 @@ my_dict_2 = {f'key_{b}': b ** 2 for b in range(2, 6)}
 # print(new_dict)
 
 ### d)
-
 my_dict_2['key_7'] = 50
-my_set = list(set(my_dict_1).symmetric_difference(my_dict_2))
+new_dict = {}
+my_set_1 = set(my_dict_1.keys()).symmetric_difference(my_dict_2.keys())
+my_set_2 = set(my_dict_1.keys()).intersection(my_dict_2.keys())
+union_dict = {**my_dict_1, **my_dict_2}
+
+for key in my_set_1:
+    new_dict[key] = union_dict[key]
+for key in my_set_2:
+    new_dict[key] = my_dict_1[key], my_dict_2[key]
+
+print(new_dict)
 
 
 

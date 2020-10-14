@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0be751e3-c157-4f67-967c-c339b8719c2c" name="Default Changelist" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_09_2020_09_31__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_09_2020_09_31__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Litvinov_task_7.py" beforeDir="false" afterPath="$PROJECT_DIR$/Litvinov_task_7.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Litvinov_task_8.py" beforeDir="false" afterPath="$PROJECT_DIR$/Litvinov_task_8.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,10 +53,10 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pythonProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
-  <component name="RunManager" selected="Python.Litvinov_task_7">
+  <component name="RunManager" selected="Python.Litvinov_task_8">
     <configuration name="Litvinov_task" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -187,8 +185,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Litvinov_task_7" />
         <item itemvalue="Python.Litvinov_task_8" />
+        <item itemvalue="Python.Litvinov_task_7" />
         <item itemvalue="Python.Litvinov_task_6" />
         <item itemvalue="Python.Litvinov_task_5" />
         <item itemvalue="Python.Litvinov_task_4" />
@@ -330,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602425500195</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Initial commit">
+      <created>1602526714280</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1602526714280</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -355,22 +360,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602523401806" />
-    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1602526559042">
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1602699028431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602526559042" />
-    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1602526559041">
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602699028431" />
+    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1602699028431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602526559041" />
-    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1602526559041">
+    <state width="1899" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602699028431" />
+    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1602699028431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602526559041" />
-    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1602526559042">
+    <state width="1899" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602699028431" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1602699028431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602526559042" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602699028431" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1602316696527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -391,10 +396,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601977734104" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602426337064">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1602526719955">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602426337064" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1602526719955" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601015327060">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

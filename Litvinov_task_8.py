@@ -51,7 +51,7 @@ print(get_email())
 
 ################# 4)
 number = 5
-mask = 'xx.xx.x.x'
+mask = 'xxx.xx.x.x'
 
 from random import randint
 def get_rand_0_255(mask=''):

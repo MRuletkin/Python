@@ -25,7 +25,7 @@ def names():
         my_line = line.split()
         name_list.append(my_line[1])
     return name_list
-
+print(names())
 # ############## 3)
 import random
 
@@ -47,7 +47,7 @@ def get_domain():
 def get_email():
     return get_name() + '.' + get_num() + '@' + get_letters() + '.' + get_domain()
 
-print(get_email())
+# print(get_email())
 
 ################# 4)
 number = 5
@@ -94,4 +94,4 @@ def generate_list_ip_address(number: int, mask='', repeat=True, sort=False) -> l
     return ip_list
 
 ip_list = generate_list_ip_address(number, mask, sort=True)
-print(ip_list)
+# print(ip_list)

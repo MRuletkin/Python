@@ -27,24 +27,25 @@ def get_death_birthday():
             if s.replace(',', '') in my_list and s.lower() in my_list:
                 new_list.append(line.strip())
     return new_list
-print(get_death_birthday())
+# print(get_death_birthday())
 
 ############### 2)
-# def get_dicts():
-#     my_list_1 = ['birthday', 'death']
-    # my_list_2 = get_death_birthday()
-    # for line in my_list_2:
-    #     my_date_line = line.split('-')[0]
-    #     my_name_line = line.split('-')[1]
-    #     for i in my_name_line.split():
-    #         i = i.replace(',', '')
-    #         i = i.lower()
-    #         if i in my_list_1:
-    #             return my_name_line.split(i)[0]
+def get_dicts():
+    my_list_1 = ['birthday', 'death']
+    my_list_2 = get_death_birthday()
+    for line in my_list_2:
+        # my_date_line = line.split('-')[0]
+        my_name_line = line.split('-')[1]
+        for i in my_name_line.split():
+            i = i.replace(',', '')
+            i = i.lower()
+            if i in my_list_1:
+                name_dict = {'name': my_name_line.split(i)[0]}
+                return name_dict
 
 
-# mm = get_dicts()
-# print(mm)
+mm = get_dicts()
+print(mm)
 
 ############# 3)
 

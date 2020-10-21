@@ -27,7 +27,7 @@ for item in day_b:
     key = item.split('-')[1].split("birthday")[0].strip()
     # value = parse.strftime('%Y/%m/%d')
     dict_b.update({key: itempars})
-    print(itempars)
+    # print(itempars)
 
 dict_d = {}
 for item in day_d:
@@ -60,3 +60,13 @@ for item in day_b:
         sep_line = ' '.join(itempars.split('nd '))
     else:
         sep_line = ' '.join(itempars.split('st '))
+
+line = ['18th December 1984', '17st March 1985']
+my_list = []
+for obj in line:
+    line_1 = obj.split()
+for i in line_1[0]:
+    if i.isdigit():
+        my_list.append(i)
+        print(''.join(my_list))
+

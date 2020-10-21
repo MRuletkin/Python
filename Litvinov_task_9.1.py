@@ -79,27 +79,31 @@ def get_list_dicts():
 def get_dicts_2():
     datal = []
     for line in get_death_birthday():
-        if "birthday" in line or "death" in line:
-            datal.append(line.replace("\n", ""))
+        if 'birthday' in line or 'death' in line:
+            datal.append(line.replace('\n', ''))
 
-    day_b = [line for line in datal if "birthday" in line]
-    day_d = [line for line in datal if "death" in line]
+    day_b = [line for line in datal if 'birthday' in line]
+    day_d = [line for line in datal if 'death' in line]
 
     dict_b = {}
     for item in day_b:
         itempars = item.split('-')[0].strip()
-        key = item.split('-')[1].split("birthday")[0].strip()
-        # value = parse.strftime('%Y/%m/%d')
+        key = item.split('-')[1].split('birthday')[0].strip()
         dict_b.update({key: itempars})
 
     dict_d = {}
     for item in day_d:
         itempars = item.split('-')[0].strip()
-        key = item.split('-')[1].split("death")[0].strip()
+        key = item.split('-')[1].split('death')[0].strip()
         value = itempars
         dict_d.update({key: value})
 
-    dict_back = [{"Name": key, "B_day": dict_b.get(key), "D_day": dict_d.get(key)} for key in dict_b.keys() | dict_d.keys()]
+    dict_back = [{'name': key, 'b_day': dict_b.get(key), 'd_day': dict_d.get(key)} for key in dict_b.keys() | dict_d.keys()]
     return dict_back
 
-# print(*get_dicts_2(), sep='\n')
+print(*get_dicts_2(), sep='\n')
+
+# my_line = '18 December 1984'
+# date_1 = datetime.strptime('18 December 1984', "%d %B %Y")
+# date = date_1.strftime("%Y/%d/%m")
+# print(date)

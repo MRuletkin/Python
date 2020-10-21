@@ -1,5 +1,7 @@
 from random import choice, sample, randint
-from string import *
+from string import ascii_letters, digits, ascii_lowercase
+import csv
+import json
 ############## 1)
 def txt():
     my_string = ''.join(choice(ascii_letters + digits + chr(32) + chr(44) + chr(45) + chr(58) + chr(59)) for i in range(100, 1000 + 1))
@@ -9,6 +11,11 @@ def txt():
     for i in sam:
         my_list[i] = chr(10)
     return ''.join(my_list)
+
+def write_txt(filename_with_path):
+    f = open(filename_with_path, 'w')
+    f.write(txt())
+
 ############## 2)
 def get_str():
     return ''.join(choice(ascii_lowercase) for i in range(5))
@@ -31,10 +38,42 @@ def get_dict():
     my_dict = {key: get_randvalue() for key in my_list}
     return my_dict
 
-################ 3)
-def get_n():
-    return randint(3, 10)
+def write_json(filename_with_path):
+    my_json = json.dumps(get_dict())
 
-def get_m():
+    with open(filename_with_path, 'w') as json_file:
+        json.dump(my_json, json_file, indent=2)
+
+    with open('test.json', 'r') as json_file:
+        my_json = json.load(json_file)
+
+################ 3)
+def get_value():
     return randint(0, 1)
 
+def get_n():
+    n = [get_value() for a in range(randint(3, 10 + 1))]
+    return n
+
+def get_nm():
+    nm = [get_n() for a in range(randint(3, 10 + 1))]
+    return nm
+
+def write_csv(filename_with_path):
+    with open(filename_with_path, 'w') as csvfile:
+        csvwriter = csv.writer(csvfile, delimiter=";")
+        csvwriter.writerows(get_nm())
+
+def file_writer(filename_with_path):
+    mode = filename_with_path.rsplit(".")[-1]
+    if mode == "txt":
+        data = write_txt(filename_with_path)
+    elif mode == "json":
+        data = write_json(filename_with_path)
+    elif mode == "csv":
+        data = write_csv(filename_with_path)
+    else:
+        raise Exception("Unsupported file format!")
+    return data
+
+file_writer('test.txt')

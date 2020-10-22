@@ -51,18 +51,21 @@ def write_json(filename_with_path):
 def get_value():
     return randint(0, 1)
 
-def get_n():
-    n = [get_value() for a in range(randint(3, 10 + 1))]
-    return n
+def get_randints():
+    return randint(3, 10)
 
-def get_nm():
-    nm = [get_n() for a in range(randint(3, 10 + 1))]
-    return nm
+def get_list(n = get_randints()):
+    list = [get_value() for a in range(n)]
+    return list
+
+def get_data(m = get_randints()):
+    data = [get_list() for _ in range(m)]
+    return data
 
 def write_csv(filename_with_path):
     with open(filename_with_path, 'w') as csvfile:
         csvwriter = csv.writer(csvfile, delimiter=";")
-        csvwriter.writerows(get_nm())
+        csvwriter.writerows(get_data())
 
 def file_writer(filename_with_path):
     mode = filename_with_path.rsplit(".")[-1]
@@ -76,4 +79,4 @@ def file_writer(filename_with_path):
         raise Exception("Unsupported file format!")
     return data
 
-file_writer('test.txt')
+file_writer('test.jpg')

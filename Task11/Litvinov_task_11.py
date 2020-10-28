@@ -11,9 +11,9 @@ def read_json(filename_with_path):
 def sort_name(tmp_dict):
     return tmp_dict['name'].split()[::-1]
 
-sort_dict = sorted(read_json('data.json'), key=sort_name)
+sort_dict = sorted(read_json('Task11/data.json'), key=sort_name)
 for i in sort_dict:
-    print(i)
+    print(i['name'])
 ################# 3)
 def sort_years(dict_):
     years = dict_['years']
@@ -24,14 +24,14 @@ def sort_years(dict_):
     else:
         return int(reg_years[1])
 
-sort_dict = sorted(read_json('data.json'), key=sort_years)
+sort_dict = sorted(read_json('Task11/data.json'), key=sort_years)
 for i in sort_dict:
      print(i['years'])
 #################### 4)
 def sort_text(tmp_dict):
     return len(tmp_dict['text'])
 
-sort_dict = sorted(read_json('data.json'), key=sort_text)
+sort_dict = sorted(read_json('Task11/data.json'), key=sort_text)
 for i in sort_dict:
      print(i['text'])
 
@@ -68,7 +68,7 @@ def get_csv_data():
 
 def write_csv():
     header = ['Автор', 'Цитата', 'Ссылка на ресурс']
-    with open('11_task.csv', 'w', encoding='utf-8') as csvfile:
+    with open('Task11/11_task.csv', 'w', encoding='utf-8') as csvfile:
         csvwriter = csv.writer(csvfile)
         csvwriter.writerow(header)
         csvwriter.writerows(get_csv_data())

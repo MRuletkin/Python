@@ -4,8 +4,9 @@ import csv
 import json
 
 class FileWriter:
-    def __init__(self, filename_with_path):
+    def __init__(self, filename_with_path, file_data = None):
         self.filename_with_path = filename_with_path
+        self.filedata = file_data
 #########################################################################
     def _txt(self):
         my_string = ''.join(choice(ascii_letters + digits + chr(32) + chr(44) + chr(45) + chr(58) + chr(59)) for i in range(randint(100, 1000)))
@@ -14,7 +15,7 @@ class FileWriter:
         my_list = list(my_string)
         for i in sam:
             my_list[i] = chr(10)
-            return ''.join(my_list)
+        return ''.join(my_list)
 
     def _write_txt(self):
         f = open(self.filename_with_path, 'w')
@@ -39,12 +40,18 @@ class FileWriter:
         with open('test.json', 'r') as json_file:
             json.load(json_file)
 ##########################################
+    def _get_value(self):
+        return randint(0, 1)
+
+    def _get_randints(self):
+        return randint(3, 10)
+
     def _get_list(self):
-        my_list = [randint(0, 1) for _ in range(randint(3, 10))]
+        my_list = [self._get_value() for _ in range(self._get_randints())]
         return my_list
 
     def _get_data(self):
-        data = [self._get_list() for _ in range(randint(3, 10))]
+        data = [self._get_list() for _ in range(self._get_randints())]
         return data
 
     def _write_csv(self):
@@ -54,19 +61,36 @@ class FileWriter:
 ################################################
     def _file_writer(self):
         mode = self.filename_with_path.rsplit(".")[-1]
-        if mode == "txt":
-            self._write_txt()
-        elif mode == "json":
-            self._write_json()
-        elif mode == "csv":
-            self._write_csv()
+        if not self.filedata:
+            if mode == "txt":
+                self._write_txt()
+            elif mode == "json":
+                self._write_json()
+            elif mode == "csv":
+                self._write_csv()
+            else:
+                raise Exception("Unsupported file format!")
         else:
-            raise Exception("Unsupported file format!")
+            if mode == "txt":
+                f = open(self.filename_with_path, 'w')
+                f.write(self.filedata)
+            elif mode == "json":
+                my_json = json.dumps(self.filedata)
+                with open(self.filename_with_path, 'w') as json_file:
+                    json.dump(my_json, json_file, indent=2)
+                with open('test.json', 'r') as json_file:
+                    json.load(json_file)
+            elif mode == 'csv':
+                with open(self.filename_with_path, 'w') as csvfile:
+                    csvwriter = csv.writer(csvfile, delimiter=";")
+                    csvwriter.writerows(self.filedata)
+            else:
+                raise Exception("Unsupported file format!")
 
     def write(self):
         return self._file_writer()
 
-my_class = FileWriter('t.txt')
+my_class = FileWriter('test.csv', [['dsgdhfdfhsssssssssssss'],['ssssssssssssssrevwerv etwtyvwevewyvyevrwevwevwryevyyrewvwe']])
 my_class.write()
 
 

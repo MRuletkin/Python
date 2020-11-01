@@ -82,4 +82,4 @@ def file_writer(filename_with_path):
         raise Exception("Unsupported file format!")
     return data
 
-file_writer('test.jpg')
+file_writer('t.txt')

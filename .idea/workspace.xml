@@ -20,13 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0be751e3-c157-4f67-967c-c339b8719c2c" name="Default Changelist" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/Litvinov_task_12.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/t.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task11/11_task.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Task11/11_task.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Litvinov_task_10.py" beforeDir="false" afterPath="$PROJECT_DIR$/Litvinov_task_10.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Litvinov_task_12.py" beforeDir="false" afterPath="$PROJECT_DIR$/Litvinov_task_12.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/t.txt" beforeDir="false" afterPath="$PROJECT_DIR$/t.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/test.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +56,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pythonProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
@@ -196,10 +194,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.Litvinov_task_12" />
+        <item itemvalue="Python.Litvinov_task_10" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.Litvinov_task_11" />
         <item itemvalue="Python.wttw" />
-        <item itemvalue="Python.Litvinov_task_10" />
       </list>
     </recent_temporary>
   </component>
@@ -429,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603883198519</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Initial commit">
+      <created>1604146558028</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1604146558028</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -454,22 +459,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604139963017" />
-    <state width="1899" height="261" key="GridCell.Tab.0.bottom" timestamp="1604145271744">
+    <state width="1899" height="261" key="GridCell.Tab.0.bottom" timestamp="1604227893265">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604145271744" />
-    <state width="1899" height="261" key="GridCell.Tab.0.center" timestamp="1604145271743">
+    <state width="1899" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604227893265" />
+    <state width="1899" height="261" key="GridCell.Tab.0.center" timestamp="1604227893265">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="261" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604145271743" />
-    <state width="1899" height="261" key="GridCell.Tab.0.left" timestamp="1604145271743">
+    <state width="1899" height="261" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604227893265" />
+    <state width="1899" height="261" key="GridCell.Tab.0.left" timestamp="1604227893265">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="261" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604145271743" />
-    <state width="1899" height="261" key="GridCell.Tab.0.right" timestamp="1604145271743">
+    <state width="1899" height="261" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604227893265" />
+    <state width="1899" height="261" key="GridCell.Tab.0.right" timestamp="1604227893265">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="261" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604145271743" />
+    <state width="1899" height="261" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604227893265" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1603220454707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -490,14 +495,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601977734104" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603883204685">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604146563008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603883204685" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604146563008" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601015327060">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601015327060" />
+    <state x="0" y="389" width="1915" height="738" key="dock-window-1" timestamp="1604226614633">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="389" width="1915" height="738" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1604226614633" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602709838833">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -82,4 +82,5 @@ def file_writer(filename_with_path):
         raise Exception("Unsupported file format!")
     return data
 
-file_writer('t.txt')
+# file_writer('t.txt')
+print(get_dict())
